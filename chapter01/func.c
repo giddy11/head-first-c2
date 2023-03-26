@@ -1,19 +1,20 @@
 #include <stdio.h>
 
-int greater (int n, int m)
+int Sum(int a, int b)
 {
-    return (n > m);
+    printf("add: %d\n", a + b);
 }
 
-int main ()
+int Subtract(int a, int b)
 {
-    int n = 100;
-    int m = 200;
+    printf("Subtract: %d\n", a - b);
+}
 
-    if (greater(n,m))
-        printf("The number %i is greater than %i\n", n,m);
-    
-    printf("The number %i is not greater than %i\n", n,m);
+int main()
+{
+    Subtract(100,3);
+
+    Sum(20,2);
 
     return (0);
 }
