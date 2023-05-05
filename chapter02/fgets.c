@@ -9,7 +9,7 @@ int main()
     char food[2];
 
     enter_food(food);
-    printf("size: %d\n", sizeof(food));
+    printf("size: %lu\n", sizeof(food));
     printf("Your food is sweet: %s\n", food);
 
     return(0);
@@ -18,7 +18,7 @@ int main()
 void enter_food(char *food)
 {
     printf("Enter Favorite food: \n");
-    printf("size in function: %d\n", sizeof(food));
+    printf("size in function: %lu\n", sizeof(food));
     fgets(food, sizeof(food), stdin);
 
 }
